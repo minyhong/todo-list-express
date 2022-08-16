@@ -34,6 +34,7 @@ async function deleteItem(){
 }
 
 async function markComplete(){
+    // create variable itemText and store the text in the document
     const itemText = this.parentNode.childNodes[1].innerText
     try{
         const response = await fetch('markComplete', {
